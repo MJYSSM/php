@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+   <script src="lib/vue.js"></script>
+    <link rel="stylesheet" href="src/test.css" type="text/css">
+<style>
+    canvas {
+        display: block;
+        margin: 100px auto;
+        box-shadow: -2px -2px 2px #efefef, 5px 5px 5px #b9b9b9;
+        cursor: pointer;
+        background-color: black;
+
+    }
+</style>
+</head>
+<body>
+<!--<p>沈思敏</p>-->
+<!--<div id="vue_det" >-->
+<!--    <h1>site : {{site}}</h1>-->
+<!--    <h1>url : {{url}}</h1>-->
+<!--    <h1>{{dddd()}}</h1>-->
+<!--    <img src="src/inscool.cc%20(1).png" sizes="50%">-->
+
+<!--</div>-->
+<!--<script type="text/javascript">-->
+
+<!--    var vm = new Vue({-->
+<!--        el: '#vue_det',-->
+<!--        data: {-->
+<!--            site: "菜鸟教程",-->
+<!--            url: "www.runoob.com",-->
+<!--            alexa: "10000",-->
+<!--        },-->
+<!--        methods: {-->
+<!--            details: function() {-->
+<!--                return  this.site + " - 学的不仅是技术，更是梦想！";-->
+<!--            },-->
+<!--            dddd:function () {-->
+<!--                return  this.site + " - 学的不仅是技术gggg，更是梦想！";-->
+<!--            }-->
+<!--        }-->
+<!--    })-->
+<!--</script>-->
+<!--<div style="height: 100px;background-color: royalblue;" class="clear">
+    <div style="float: left;width: 300px;background-color: aqua;height: 100px"></div>
+    <div style="width: 300px;float: right;background-color: black;height: 100px"></div>
+    <div style="background-color: aliceblue ;height: 100px"></div>
+</div>-->
+<canvas id="chess" width="500px" height="500px" ></canvas>
+<canvas id="ches1s" style="width: 500px;height: 500px" ></canvas>
+<!--<script>
+
+    var over = false;
+    var me = true; //我
+    var _nowi = 0, _nowj = 0; //记录自己下棋的坐标
+    var _compi = 0, _compj = 0; //记录计算机当前下棋的坐标
+    var _myWin = [], _compWin = []; //记录我，计算机赢的情况
+    var backAble = false, returnAble = false;
+    var resultTxt = document.getElementById('result-wrap');
+
+    var chressBord = [];//棋盘
+    for(var i = 0; i < 15; i++){
+        chressBord[i] = [];
+        for(var j = 0; j < 15; j++){
+            chressBord[i][j] = 0;
+        }
+    }
+
+
+
+
+
+
+    var chess = document.getElementById("chess");
+    var context = chess.getContext('2d');
+
+    context.strokeStyle = '#bfbfbf'; //边框颜色
+    var drawChessBoard = function() {
+        for(var i = 0; i < 15; i++){
+            context.moveTo(15 + i * 30 , 15);
+            context.lineTo(15 + i * 30 , 435);
+            context.stroke();
+            context.moveTo(15 , 15 + i * 30);
+            context.lineTo(435 , 15 + i * 30);
+            context.stroke();
+        }
+    }
+
+
+
+    window.onload = function(){
+        drawChessBoard(); // 画棋盘
+    }
+
+
+
+
+
+
+
+
+</script>-->
+</body>
+</html>
